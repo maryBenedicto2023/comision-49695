@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Exo 2', sans-serif;
+    width: 100%; 
+   
+}
+
+.navbar{
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    background-color: rgb(84, 184, 93);     
+    
+}
+
+.navbar ul{
+    display: flex;
+    gap: 90px;
+    margin: 1.25rem 0px;
+    list-style: none; 
+    padding-right: 60px;    
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.5625rem;
+    font-weight: bold;    
+}
+
+.logo-nav img{      
+    width: 90px;
+    margin-left: 20px;     
+} 
+
+.pow {
+    display: flex;
+    font-size: 2.1875rem;
+    font-weight: bold;
+    color: white;  
+    padding: 30px 200px 30px 0px;
+}
+
+h1 {
+    color: black;
+    font-weight: bold;
+    font-size: 50px;    
+    }
+
+    h2 {
+        font-weight: bold;
+        font-size: 35px;
+        text-align: center; 
+        padding: 30px
+    }
+    .parrafo-nosotros {
+        font-size: 25px;
+        text-align: left;
+        padding: 1.5625rem;
+        line-height: 40px;        
+    }
+        
+
+.grid-container-servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:80px 400px 350px 750px  250px ;
+    grid-template-areas:
+        "header header header "
+        "presentacion-servicios presentacion-servicios presentacion-servicios"
+        "intro-servicios intro-servicios img-servicios"
+        "detalle-servicios detalle-servicios  detalle-servicios "
+        "footer footer footer ";
+}
+
+header{
+    background-color: blueviolet;
+    grid-area: header;
+}
+
+ .presentacion-servicios {
+    background-image: url("../assets/asomados.jpg") ;
+    grid-area: presentacion-servicios ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.textos-presentacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+    margin-right: 80px;
+}
+ .intro-servicios {
+    background-color:#F4DFB6 ;
+    grid-area: intro-servicios ;
+    align-items: center;
+   justify-items: center;
+}
+ .img-servicios {
+    width: 100%;
+    height: 100%;
+    background-color:chartreuse ;
+    grid-area:img-servicios ;
+
+}
+.img-servicios img {
+    width: 100%;
+    height: 100%;  
+
+}
+
+ .detalle-servicios {
+    background-color:#EC8F5E ;
+    grid-area: detalle-servicios ;
+    display: flex;
+    width: 100%;  
+    flex-direction: row;  
+   justify-content:space-evenly 
+
+}
+
+.card-body {
+text-align: center;
+background-color: #F4DFB6;
+}
+
+.btn-servicios {    
+    border-radius: 1.25rem;
+    width: 120px;
+    height: 50px;
+    background-color: #9FBB73;      
+}
+
+.btn-servicios a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.grid-container-planes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:80px 400px 350px 750px  250px ;
+    grid-template-areas:
+        "header header header "
+        "presentacion-planes presentacion-planes presentacion-planes"
+        "intro-planes intro-planes img-planes"
+        "detalle-planes detalle-planes  detalle-planes "
+        "footer footer footer ";
+}
+.presentacion-planes {
+    background-image: url("../assets/peluqueria.jpg") ;
+    grid-area: presentacion-planes ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+}
+
+.intro-planes {
+    background-color:#F4DFB6 ;
+    grid-area: intro-planes ;
+    align-items: center;
+    justify-items: center;}
+
+.detalle-planes {
+    background-color:#EC8F5E ;
+    grid-area: detalle-planes ;
+    display: flex;
+    width: 100%;  
+    flex-direction: row;  
+   justify-content:space-evenly 
+
+}
+
+.img-planes {
+    width: 100%;
+    height: 100%;   
+    grid-area:img-planes ;
+
+}
+
+.presentacion-adopcion {
+    background-image: url("../assets/perro-gato-frazada.jpg") ;
+    grid-area: presentacion-planes ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+
+}
+
+footer
+ {background-color: #F3B664;
+    grid-area: footer;
+display: flex;
+flex: row;
+align-items: center;
+}
+
+.logo-footer {  
+    width: 90px;
+    margin-left: 20px; 
+} 
+
+.brand-footer {     
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+} 
+
+.bloque-redes {    
+  padding: 110px;
+  justify-content: center;   
+  align-items: center;
+} 
+
+.info-contacto{    
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+   justify-content:left;   
+} 
+
+.info {
+font-size: 20px;
+font-weight: bold;
+padding: 15px;
+}
+
+.item-info{
+width: 25px;
+height: 25px;
+}
+
+.redes{
+display: flex;
+flex-direction: row;
+justify-content:space-evenly;
+justify-items: center;
+align-items: center;
+}
+
+.item-redes{
+    width: 50px;
+    height: 50px;
+}
+.seguinos {
+text-align: center;
+font-size: 30px;
+color: white;
+}
+
