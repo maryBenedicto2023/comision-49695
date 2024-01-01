@@ -241,8 +241,8 @@ align-items: center;
 height: 13.75rem;
 }
 
-.logo-footer {  
-    width: 90px;
+ footer .logo-footer {  
+    width: 120px;
     margin-left: 20px; 
 } 
 
