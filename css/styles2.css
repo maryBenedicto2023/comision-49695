@@ -352,6 +352,21 @@ color: white;
     .navbar{
         /* background-color: chartreuse; */
     }
+
+    .navbar ul{        
+        gap: 50px;        
+        padding-right: 40px; 
+        padding-left: 140px;   
+    }
+    .logo-nav img{      
+        width: 80px;
+        margin-left: 15px;  
+        padding: 0px;         
+    } 
+    
+    .pow {
+    padding: 0px;
+    }
     
 }
 
@@ -478,7 +493,22 @@ color: white;
                     text-align: center;
                     font-size: 15px;
                     color: white;       
-                    }                       
+                    }  
+                    
+                    
+                    .grid-container-planes {
+                        display: grid;
+                        grid-template-columns: repeat(3, 33%);
+                        grid-template-rows:70px 290px 250px 560px  180px ;
+                        grid-template-areas:
+                            "header header header "
+                            "presentacion-planes presentacion-planes presentacion-planes"
+                            "intro-planes intro-planes img-planes"
+                            "detalle-planes detalle-planes  detalle-planes "
+                            "footer footer footer ";
+                    }
+
+
     
 }
 
@@ -594,6 +624,21 @@ display: block;
                 .seguinos {                   
                     font-size: 25px;
                     
+                    }
+
+
+                    .grid-container-planes {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 100%;
+                        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+                        grid-template-rows: auto 200px auto auto auto ;
+                        grid-template-areas:
+                            "header  "
+                            "presentacion-planes "
+                            "intro-planes "
+                            "detalle-planes "
+                            "footer ";
                     }
 }
 
