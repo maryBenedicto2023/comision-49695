@@ -33,6 +33,10 @@ body {
     font-weight: bold;    
 }
 
+.navbar ul li a:hover{   
+    color: white;    
+} 
+
 .logo-nav img{      
     width: 90px;
     margin-left: 20px;     
@@ -141,7 +145,7 @@ header{
 .card  {
    margin-top:20px;
    margin-bottom: 20px;
-    width: 300px;
+    width: 300px;   
 }
 
 .card-body {
@@ -352,7 +356,6 @@ color: white;
 }
 
 @media (max-width: 768px)  {
-
     .grid-container-servicios {
         display: grid;
         grid-template-columns: repeat(3, 33%);
@@ -419,7 +422,6 @@ color: white;
     }
 
     .card  {
-
         width: 200px;
     }
     .card-text  {
@@ -476,15 +478,9 @@ color: white;
                     text-align: center;
                     font-size: 15px;
                     color: white;       
-                    }
-                        
-
-
-
+                    }                       
     
 }
-
-
 
 @media (max-width: 425px)  {
     .grid-container-servicios {
@@ -501,66 +497,58 @@ color: white;
             "footer ";
     }
 
-    /* .pow {
+    footer .pow {
         display: none;
-    } */
+    }
 
   header {
-
     justify-content: center;
   }
 
-.navbar {
-   /* // display: block; */
-    /* justify-items: center; */
-    
-    justify-content: center;
-    flex-direction: column;
+  .logo-nav img {
+width: 100px;
+height: 100px;
+padding: 0px;
+  }
+  .pow {
+       padding: 0px;
+       font-size: 35px;
+  }
+
+.navbar { 
+    flex-direction: column;   
 }
-.navbar ul{
-    /* display: block; */
-    /* gap: 40px; */
-    /* margin: 1.25rem 0px; */
-    /* margin-right: 15px; */
-    list-style: none; 
-    flex-direction: column;
-    justify-content: center;
-       /* padding-right: 15px;     */
-    /* padding-left: 55px; */
+.navbar ul{ 
+    gap: 3px;
+    flex-direction: column; 
+    margin: 0px;
+    padding: 0px;
+    justify-self: center;
+    padding: 20px;    
 }
 
-.navbar ul li {
-justify-content: center;
+ .navbar ul li {
+text-align: center;
 }
 
 .navbar ul li a{
     text-decoration: none;
     color: black;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold; 
-    text-align: center;  
-    justify-items: center; 
-    
-}
+   justify-self: center;    
+} 
 
 h1{
-    font-size: 30px;
-   
+    font-size: 30px;   
 }
-
 h2 {
     /* font-weight: bold; */
     font-size: 20px;
     text-align: center; 
-    padding: 10px
+    padding: 15px 0px 5px 0px;
 }
 
-/* h3 {
-    font-weight: bold;
-    font-size: 30px;
-    text-align: center; 
-    padding: 15px 15px 15px 0px;
-} */
 .parrafo-nosotros {
     font-size: 15px;
     text-align: left;
@@ -575,12 +563,12 @@ display: block;
 .card  {
    margin: 30px;
     width: 320px;
-     align-self: center;
-    justify-self: center;
+     align-self: center;  
+    
 }
+
 .card-text  {
-    font-size:10px;
-    /* font-weight: normal; */
+    font-size:10px;    
         }         
         .card-title  {
             font-size:25px;
@@ -597,15 +585,21 @@ display: block;
                     justify-content: center;           
                 } 
                 footer  .logo-footer {  
-                    width: 100px;
-                    /* margin-left: 20px;  */
+                    width: 100px;                    
                 } 
                 .brand-footer {
                     justify-content: center;    
-                }    
+                }  
+                
+                .seguinos {                   
+                    font-size: 25px;
+                    
+                    }
 }
 
 @media (max-width: 375px)  {
+
+
     
 }
 
