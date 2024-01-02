@@ -139,8 +139,9 @@ header{
 }
 
 .card  {
-
-    width: 350px;
+   margin-top:20px;
+   margin-bottom: 20px;
+    width: 300px;
 }
 
 .card-body {
@@ -486,7 +487,122 @@ color: white;
 
 
 @media (max-width: 425px)  {
+    .grid-container-servicios {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 200px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-servicios "
+            "intro-servicios "
+            "detalle-servicios "
+            "footer ";
+    }
+
+    /* .pow {
+        display: none;
+    } */
+
+  header {
+
+    justify-content: center;
+  }
+
+.navbar {
+   /* // display: block; */
+    /* justify-items: center; */
     
+    justify-content: center;
+    flex-direction: column;
+}
+.navbar ul{
+    /* display: block; */
+    /* gap: 40px; */
+    /* margin: 1.25rem 0px; */
+    /* margin-right: 15px; */
+    list-style: none; 
+    flex-direction: column;
+    justify-content: center;
+       /* padding-right: 15px;     */
+    /* padding-left: 55px; */
+}
+
+.navbar ul li {
+justify-content: center;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold; 
+    text-align: center;  
+    justify-items: center; 
+    
+}
+
+h1{
+    font-size: 30px;
+   
+}
+
+h2 {
+    /* font-weight: bold; */
+    font-size: 20px;
+    text-align: center; 
+    padding: 10px
+}
+
+/* h3 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center; 
+    padding: 15px 15px 15px 0px;
+} */
+.parrafo-nosotros {
+    font-size: 15px;
+    text-align: left;
+    padding: 15px;
+    line-height: 20px;        
+}
+
+.detalle-servicios {
+display: block;
+}
+
+.card  {
+   margin: 30px;
+    width: 320px;
+     align-self: center;
+    justify-self: center;
+}
+.card-text  {
+    font-size:10px;
+    /* font-weight: normal; */
+        }         
+        .card-title  {
+            font-size:25px;
+                } 
+                footer {
+                    display: block;
+                    justify-content: center;
+                }
+                .bloque-redes {    
+                    padding: 15px;
+                    margin-bottom: 20px;                   
+                  } 
+                  .info-contacto{    
+                    justify-content: center;           
+                } 
+                footer  .logo-footer {  
+                    width: 100px;
+                    /* margin-left: 20px;  */
+                } 
+                .brand-footer {
+                    justify-content: center;    
+                }    
 }
 
 @media (max-width: 375px)  {
