@@ -6,47 +6,45 @@
 
 body {
     font-family:'Exo 2', sans-serif;
-    width: 100%; 
-   
+    width: 100%;    
 }
 
 .navbar{
     display: flex;
-    /*flex-direction: column;*/
     align-items: center;
     background-color: rgb(84, 184, 93);     
     
 }
 
-.navbar ul{
+.navbar ul {
     display: flex;
     gap: 90px;
     margin: 1.25rem 0px;
-    list-style: none; 
-    padding-right: 60px;    
+    list-style: none;
+    padding-right: 60px;
 }
 
-.navbar ul li a{
+.navbar ul li a {
     text-decoration: none;
     color: black;
     font-size: 1.5625rem;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-.navbar ul li a:hover{   
-    color: white;    
-} 
+.navbar ul li a:hover {
+    color: white;
+}
 
-.logo-nav img{      
+.logo-nav img {
     width: 90px;
-    margin-left: 20px;     
-} 
+    margin-left: 20px;
+}
 
 .pow {
     display: flex;
     font-size: 2.1875rem;
     font-weight: bold;
-    color: white;  
+    color: white;
     padding: 30px 250px 30px 0px;
 }
 
@@ -77,13 +75,13 @@ h1 {
     }
 
     .card-text  {
-font-weight: bold;
+       font-weight: bold;
     }        
 
 .grid-container-servicios {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:80px 450px 400px 700px  200px ;
+    grid-template-rows:80px 450px 400px 690px  200px ;
     grid-template-areas:
         "header header header "
         "presentacion-servicios presentacion-servicios presentacion-servicios"
@@ -111,46 +109,46 @@ header{
 .textos-presentacion {
     display: flex;
     flex-direction: column;
-    align-items: right;       
+    align-items: right;
     margin-right: 80px;
 }
- .intro-servicios {
-    background-color:#F4DFB6 ;
-    grid-area: intro-servicios ;
-    align-items: center;
-   justify-items: center;
-}
- .img-servicios {
-    width: 100%;
-    height: 100%;   
-    grid-area:img-servicios ;
 
+.intro-servicios {
+    background-color: #F4DFB6;
+    grid-area: intro-servicios;
+    align-items: center;
+    justify-items: center;
+}
+
+.img-servicios {
+    width: 100%;
+    height: 100%;
+    grid-area: img-servicios;
 }
 .img-servicios img {
     width: 100%;
-    height: 100%;  
+    height: 100%;
 
 }
 
- .detalle-servicios {
-    background-color:#EC8F5E ;
-    grid-area: detalle-servicios ;
+.detalle-servicios {
+    background-color: #EC8F5E;
+    grid-area: detalle-servicios;
     display: flex;
-    width: 100%;  
-    flex-direction: row;  
-   justify-content:space-evenly 
-
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly
 }
 
-.card  {
-   margin-top:20px;
-   margin-bottom: 20px;
-    width: 320px;   
+.card {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
 }
 
 .card-body {
-text-align: center;
-background-color: #F4DFB6;
+    text-align: center;
+    background-color: #F4DFB6;
 }
 
 .btn-servicios {    
@@ -158,6 +156,7 @@ background-color: #F4DFB6;
     width: 120px;
     height: 50px;
     background-color: #9FBB73; 
+    margin-top: 10px;
     margin-bottom: 5px;     
 }
 
@@ -172,7 +171,7 @@ background-color: #F4DFB6;
 .grid-container-planes {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:80px 450px 400px 700px  250px ;
+    grid-template-rows:80px 450px 400px auto  250px ;
     grid-template-areas:
         "header header header "
         "presentacion-planes presentacion-planes presentacion-planes"
@@ -189,36 +188,52 @@ background-color: #F4DFB6;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-
 }
 
 .intro-planes {
-    background-color:#F4DFB6 ;
-    grid-area: intro-planes ;
+    background-color: #F4DFB6;
+    grid-area: intro-planes;
     align-items: center;
-    justify-items: center;}
+    justify-items: center;
+}
 
 .detalle-planes {
-    background-color:#EC8F5E ;
-    grid-area: detalle-planes ;
+    background-color: #EC8F5E;
+    grid-area: detalle-planes;
     display: flex;
-    width: 100%;  
-    flex-direction: row;  
-   justify-content:space-evenly 
-
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly
 }
 
 .img-planes {
     width: 100%;
-    height: 100%;   
-    grid-area:img-planes ;
-
+    height: 100%;
+    grid-area: img-planes;
 }
 
-.img-star{
+.img-star {
     width: 40px;
     height: 40px;
+}
+    /* .grid-container-adopciones{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows:80px 450px auto 250px ;
+        grid-template-areas:
+            "header header header "
+            "presentacion-adopciones presentacion-adopciones presentacion-adopciones"         
+           "grid-galeria-adopciones grid-galeria-adopciones grid-galeria-adopciones" 
+            "footer footer footer ";
+
     }
+
+   .grid-container-adopciones :nth-child(2){
+        grid-area:grid-galeria-adopciones ;
+    } */
+    .grid-container-adopciones footer{
+      height: 200px;
+    } 
 
     .grid-galeria-adopciones {
         background-color:#F1EB90;
@@ -237,56 +252,57 @@ background-color: #F4DFB6;
     }
 
 .presentacion-adopciones {
-    background-image: url("../assets/pets-group.jpg") ;   
-    background-size:cover;
+    background-image: url("../assets/pets-group.jpg");
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
-    height: 500px;
+    height: 380px;
 
 }
-
 .titulo-adopciones {
-
     background-color: #F1EB90;
 }
 
-.imagen-galeria{
+.imagen-galeria {
     width: 100%;
     height: 100%;
 }
 
-.imagen-galeria img{
+.imagen-galeria img {
     width: 100%;
     height: 100%;
-   
 }
-
 
 .img-1 {
-    grid-area:img-1;
-}
-.img-3 {
-    grid-area:img-3 ;
-}
-.img-4 {
-    grid-area:img-4 ;
-}
-.img-6 {
-    grid-area:img-6 ;}
- .img-7 {
-   grid-area:img-7 ;
+    grid-area: img-1;
 }
 
-footer
- {background-color: #F3B664;
+.img-3 {
+    grid-area: img-3;
+}
+
+.img-4 {
+    grid-area: img-4;
+}
+
+.img-6 {
+    grid-area: img-6;
+}
+
+.img-7 {
+    grid-area: img-7;
+}
+
+footer {
+    background-color: #F3B664;
     grid-area: footer;
-display: flex;
-flex: row;
-align-items: center;
-justify-content:space-around;
+    display: flex;
+    flex: row;
+    align-items: center;
+    justify-content: space-around;
 }
 
 footer .pow {
@@ -296,7 +312,6 @@ footer .pow {
 
  footer  .logo-footer {  
     width: 120px;
-    /* margin-left: 20px;  */
 } 
 
 .brand-footer {     
@@ -311,48 +326,59 @@ footer .pow {
   align-items: center;  
 } 
 
-.info-contacto{     
-    display:flex;
+.info-contacto {
+    display: flex;
     flex-direction: row;
     align-items: center;
-   justify-content:left;   
-} 
+    justify-content: left;
+}
 
 .info {
-font-size: 20px;
-font-weight: bold;
-padding-top: 15px;
-padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-left: 10px;
 }
 
-.item-info{
-width: 25px;
-height: 25px;
+.item-info {
+    width: 25px;
+    height: 25px;
 }
 
-.redes{
-display: flex;
-flex-direction: row;
-justify-content:space-evenly;
-justify-items: center;
-align-items: center;
+.redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-items: center;
 }
 
-.item-redes{
+.item-redes {
     width: 50px;
     height: 50px;
 }
+
 .seguinos {
-text-align: center;
-font-size: 30px;
-color: white;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+@media (max-width: 1440px)  {
+    .navbar ul{        
+        gap: 50px;        
+        padding-right: 40px; 
+        padding-left: 140px;   
+    }
+    .logo-nav img{      
+        width: 80px;
+        margin-left: 15px;  
+        padding: 0px;         
+    } 
+
 }
 
 @media (max-width: 1024px)  {
-    .navbar{
-        /* background-color: chartreuse; */
-    }
-
     .navbar ul{        
         gap: 50px;        
         padding-right: 40px; 
@@ -366,6 +392,9 @@ color: white;
     
     .pow {
     padding: 0px;
+    }
+    .detalle-planes .card{
+        width:220px ;
     }
     
 }
@@ -419,7 +448,7 @@ color: white;
 
     h2 {
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center; 
         padding: 30px
     }
@@ -433,13 +462,10 @@ color: white;
         font-size: 15px;
         text-align: left;
         padding-top: 15px;
-        line-height: 25px;        
+        line-height: 25px; 
+        padding-bottom: 15px;       
     }
-
-    .img-servicios {
-        display: none;
-    }
-
+   
     .card  {
         width: 200px;
     }
@@ -450,7 +476,6 @@ color: white;
             .card-title  {
                 font-size: 18px;
                     } 
-                    
                     footer {
                      display: flex;
                      justify-content: space-around;
@@ -465,20 +490,15 @@ color: white;
                         width: 80px;
                         margin-left: 15px; 
                     }       
-                    footer .bloque-redes {    
-                      /* padding: 80px; */                     
+                    footer .bloque-redes {                       
                       justify-content: center;   
                       align-items: center;                     
-                    } 
+                    }                     
                     
-                    /* .redes{                        
-                        flex-direction: column;   
-                        justify-content: space-around;                 
-                        } */
                     .info-contacto{    
-                        display:flex;
-                        /* flex-direction: row; */              
-                    } 
+                        display:flex;                              
+                    }
+
                     .item-info{
                     width: 20px;
                     height: 20px;
@@ -502,17 +522,59 @@ color: white;
                     
                     .grid-container-planes {
                         display: grid;
-                        grid-template-columns: repeat(3, 33%);
-                        grid-template-rows:70px 290px 250px 560px  180px ;
+                        width: 100%;
+                        grid-template-columns: repeat(2, 50%);
+                        grid-template-rows:70px 290px 250px auto  180px ;
                         grid-template-areas:
-                            "header header header "
-                            "presentacion-planes presentacion-planes presentacion-planes"
-                            "intro-planes intro-planes img-planes"
-                            "detalle-planes detalle-planes  detalle-planes "
-                            "footer footer footer ";
+                            "header header "
+                            "presentacion-planes presentacion-planes "
+                            "intro-planes img-planes"
+                            "detalle-planes detalle-planes  "
+                            "footer footer ";
                     }
 
+                    .img-planes {
+                        width: 100%;
+                        height: 100%;                        
+                    }
 
+                    .img-planes img {
+                        width: 100%;
+                        height: 100%;                      
+                    }
+                    .detalle-planes {
+                        width: 100%;
+                        display: grid;
+                        grid-template-columns: 50% 50%;
+                        grid-template-rows: 400px 400px;
+                        grid-template-areas: 
+                        "child-1 child-2"
+                        "child-3 child-4"
+                        ;
+                    }
+
+                    .detalle-planes :first-child {
+                      grid-area: child-1;
+                    }
+                    
+                    .detalle-planes :nth-child(2) {
+                        grid-area: child-2;
+                        
+                    }
+                    .detalle-planes :nth-child(3) {                       
+                        grid-area: child-3;
+                    }
+                    .detalle-planes :last-child {                      
+                        grid-area: child-4;
+                    }
+
+                   .detalle-planes .card {
+                     width: 320px;
+                     margin-top:55px;
+                     margin-bottom: 55px;                    
+                      justify-self: center;
+                      align-self: center;
+                   }
     
 }
 
@@ -605,8 +667,7 @@ display: block;
 .card  {
    margin: 30px;
     width: 320px;
-     align-self: center;  
-    
+     align-self: center;        
 }
 
 .card-text  {
@@ -614,7 +675,7 @@ display: block;
         }         
         .card-title  {
             font-size:25px;
-                } 
+                }
                 footer {
                     display: block;
                     justify-content: center;
@@ -637,8 +698,6 @@ display: block;
                     font-size: 25px;
                     
                     }
-
-
                     .grid-container-planes {
                         width: 100%;
                         display: grid;
@@ -666,6 +725,27 @@ display: block;
 }
 
 @media (max-width: 320px)  {
+    .grid-container-planes {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        /* grid-template-rows: 20px 200px 300px 300px 40px ; */
+        grid-template-rows: auto 200px auto auto auto ;
+        grid-template-areas:
+            "header  "
+            "presentacion-planes "
+            "intro-planes "
+            "detalle-planes "
+            "footer ";
+    }
+
+    .detalle-planes {
+        display: block;
+        }
+
+        .img-planes {
+            display: none;
+        }
     
 }
 
