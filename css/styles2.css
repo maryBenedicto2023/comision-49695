@@ -436,6 +436,10 @@ color: white;
         line-height: 25px;        
     }
 
+    .img-servicios {
+        display: none;
+    }
+
     .card  {
         width: 200px;
     }
@@ -525,6 +529,10 @@ color: white;
             "intro-servicios "
             "detalle-servicios "
             "footer ";
+    }
+
+    .img-planes {
+        display: none;
     }
 
     footer .pow {
@@ -640,6 +648,10 @@ display: block;
                             "detalle-planes "
                             "footer ";
                     }
+
+                    .detalle-planes {
+                        display: block;
+                        }
 }
 
 @media (max-width: 375px)  {
